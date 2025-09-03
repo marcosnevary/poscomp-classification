@@ -1,0 +1,33 @@
+[project]
+name = "poscomp-classification"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gdown>=5.2.0",
+    "pandas>=2.3.2",
+    "seaborn>=0.13.2",
+]
+
+[tool.ruff]
+indent-width = 4
+line-length = 88
+select = [
+  "ALL",
+]
+ignore = [
+  "D100",
+  "D101",
+  "D102",
+  "D103",
+  "D107",
+  "I001"
+]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "lf"
+docstring-code-format = true
+docstring-code-line-length = 88
